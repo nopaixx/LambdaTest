@@ -16,7 +16,11 @@ Tecnological stack used:
  - Boto3
  - Docker and docker-compose
 
-As a plus, it has developed a satellite communication system between the AWS lambdas and the "[deploy.py](deploy.py)" program using AWA SQS and AWS ElastiCache
+As a plus
+
+ - It has developed a satellite communication system between the AWS lambdas and the "[deploy.py](deploy.py)" program using AWA SQS and AWS ElastiCache
+ - Lambda new code is packed and updated deploy at the same time
+ - Lambda code and deploy program share same libraries
 
 (Screen shot of interactive mode, show all lambda launched) 
 ![enter image description here](images/parallel_proces.png)
