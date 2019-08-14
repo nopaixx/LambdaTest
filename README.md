@@ -16,7 +16,7 @@ Tecnological stack used:
  - Boto3
  - Docker and docker-compose
 
-As a plus, it has developed a satellite communication system between the AWS lambdas and the "[deploy.py](deploy.py)"  program using AWA SQS and AWS ElastiCache
+As a plus, it has developed a satellite communication system between the AWS lambdas and the "[deploy.py](deploy.py)" program using AWA SQS and AWS ElastiCache
 
 (Screen shot of interactive mode, show all lambda launched) 
 ![enter image description here](images/parallel_proces.png)
@@ -51,7 +51,7 @@ Replace xxxx with you aws details variable names are self explanatories...
 
 ### Run deploy
 
-Main python program for deploy is loacted inside file /project/app_deploy.py
+Main python program for deploy is loacted inside file "[project/app_deploy.py](project/app_deploy.py)"
 
 The program do:
 
@@ -83,7 +83,7 @@ The program do:
 
 ## AWS Lambda
 
-Main code for lambda code is located inside project/app_lambda01.py
+Main code for lambda code is located inside "[project/app_lambda01.py](project/app_lambda01.py)"
 
 Please note that this project could be extended to deploy multiple lambdas with the same project and share the same code and libraris in one single project.
 
