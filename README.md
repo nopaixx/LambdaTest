@@ -59,7 +59,7 @@ Main python program for deploy is loacted inside file "[project/app_deploy.py](p
 
 The program do:
 
- 1. Deploy again lambda source code with dependencies in this case shell script pack_lambda is used
+ 1. Deploy again lambda source code with dependencies in this case shell script "[pack_lambda](pack_lambda)" is used
  2. Map SQS queue to new lambda function
  3. Send SQS message to queue with new deploy details (one message per item inside default.json)
  4. Wait to terminate until all lambdas launched end
