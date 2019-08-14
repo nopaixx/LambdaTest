@@ -45,10 +45,14 @@ The program ends where all lambdas launched ended and state is updated
 
 ### Mantain resources/default.json
 
+File--> "[resources/default.json](resources/default.json)"
+
 Add in this file all you cluster/services/container/image/tag yo want to deploy
 ![enter image description here](images/default.json.png)
 
-### Edit enviromen_vars file with you aws account details
+### Edit enviroment_vars file with you aws account details
+
+File--> "[enviroment_vars](enviroment_vars)"
 
 Replace xxxx with you aws details variable names are self explanatories...
 ![enter image description here](images/enviroment_vars.png)
