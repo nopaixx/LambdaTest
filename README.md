@@ -54,7 +54,7 @@ Add in this file all you cluster/services/container/image/tag yo want to deploy
 
 File--> "[enviroment_vars](enviroment_vars)"
 
-Replace xxxx with you aws details variable names are self explanatories...
+Replace xxxx with you aws details variable names are self-explanatorys...
 ![enter image description here](images/enviroment_vars.png)
 
 ### Run deploy
