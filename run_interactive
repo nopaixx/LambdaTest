@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Setting up virtual env"
+rm -rf venv
+virtualenv --python python3.7 venv
+
+source venv/bin/activate
+
+echo "Setting up environment variables"
+source enviroment_vars
+
+echo "Installing libs"
+pip install -r requirements.txt
+
+echo "Go to deploy"
+python deploy.py -i

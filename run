@@ -1,0 +1,3 @@
+#!/bin/bash
+source enviroment_vars
+python deploy.py 

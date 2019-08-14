@@ -1,0 +1,37 @@
+
+export APP_NAME=project
+export APP_VERSION=0.1
+export APP_DIST=package/project.zip
+
+
+# region and vpc config
+export APP_AWS_REGION=us-east-1
+export APP_VPC_ID=vpc-xxxxx
+# two subnet recomended but 1 is ok for now
+export APP_SUBNET_ID=subnet-xxxxxxxxx
+# be sure you sec group can contect with you redis server
+export APP_SEC_GROUP=sg-xxxxxxxxxxxxxxxx
+
+
+# Sqs config
+export APP_SQS_QUEUE_NAME=lambdalaunchdemo
+export APP_SQS_URL=https://sqs.us-east-1.amazonaws.com/XXXXXXXXXXXXXXXXXXX/
+export APP_SQS_ARN=arn:aws:sqs:us-east-1:XXXXXXXXXXXXXXXXXXX:lambdalaunchdemo
+
+
+# redis config
+export APP_REDIS=xxxxxxxxxxxxxxxxx.ef0cpk.0001.use1.cache.amazonaws.com
+export APP_REDIS_PORT=6379
+
+
+# we can use this project to work with multiple lambdas
+export APP_LAMBDA_DEFAULT_ROLE_EXECUTION=arn:aws:iam::XXXXXXXXXXXXXXXXX:role/service-role/lambda0222-role-w675h5w8
+
+# lambda deploy 
+export APP_LAMBDA_DEPLOY_NAME=lambda_deploy
+export APP_LAMBDA_DEPLOY_HANDLE=project.handle_01
+
+
+# AWS key
+export APP_AWS_KEY=XXXXXXXXXXXXXXXX
+export APP_AWS_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

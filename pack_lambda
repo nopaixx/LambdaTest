@@ -1,0 +1,41 @@
+#!/bin/bash
+echo "Setting up virtual env"
+rm -rf venv
+rm -rf package
+virtualenv --python python3.7 venv
+source venv/bin/activate
+
+echo "Setting up environment variables"
+source enviroment_vars
+
+echo "Install or check uninstalled cache_docker_image libs"
+pip install -r requirements.txt
+
+echo "Building package"
+mkdir -p ./package/tmp/lib
+cp -a ./project/ ./package/tmp/
+
+echo "Copying python libs"
+
+if test -d venv/lib; then \
+  cp -a venv/lib/python3.7/site-packages/. ./package/tmp
+fi
+
+if test -d venv/lib64; then \
+  cp -a venv/lib64/python3.7/site-packages/. ./package/tmp
+fi
+
+echo "Purge unused libs"
+rm -rf ./package/tmp/wheel*
+rm -rf ./package/tmp/easy-install*
+rm -rf ./package/tmp/setuptools*
+rm -rf ./package/tmp/uuid*
+
+echo "Zip files"
+cd ./package/tmp && zip -r ../project.zip .
+cd ..
+rm -rf tmp/
+
+#ls
+#unzip project.zip
+#ls project/

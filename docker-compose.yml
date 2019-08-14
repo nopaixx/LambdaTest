@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+ deploy:
+  build: .
+  command: ["./run"]
+  volumes:
+   - .:/project
+  environment:
+   - PORT=1234
