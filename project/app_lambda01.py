@@ -7,6 +7,9 @@ from .constants import TASK_END
 from .constants import TASK_RECIVED_LAMBDA
 from .constants import TASK_RETRIVING_TASKDEF_NAME
 from .constants import TASK_RETRIVING_TASKDEF_DESC
+from .constants import TASK_DEFINING_TASKDEF
+from .constants import TASK_REGISTER_NEW_TASKDEF
+from .constants import TASK_UPDATE_SERVICE
 
 def lambda_function_01(event, context):
 
