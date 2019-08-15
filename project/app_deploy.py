@@ -11,8 +11,6 @@ from tabulate import tabulate
 import time
 from .constants import TASK_CREATED
 from .constants import TASK_END
-from .constants import TASK_RECIVED_LAMBDA
-
 
 class AppDeploy:
     """
